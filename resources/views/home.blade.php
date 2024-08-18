@@ -8,7 +8,7 @@
     <div id="banner" class="banner">
         <div class="content">
             <div class="image">
-                <img src="{{asset('images/pixelart.png')}}" alt="">
+                <img src="{{asset('images/fotodeperfil-removebg-preview.png')}}" alt="">
             </div>
             <h1 class="present-myself">
                 Olá, Eu sou <strong>Gustavo Raulino da Silva</strong>
@@ -30,7 +30,7 @@
                     </svg>
                     <p>Curriculo</p>
                 </a>
-                <a href="" class="btn-action">
+                <a href="#tecnologias" class="btn-action">
                     <p>Tecnologias</p>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                         class="bi bi-arrow-down" viewBox="0 0 16 16">
@@ -44,10 +44,10 @@
     <div id="tecnologias" class="technologies-section">
         <h2 class="section-title">Tecnologias e Habilidades</h2>
         <div class="technologies">
-            @for ($i = 0; $i < 6; $i++)
+            @for ($i = 0; $i < 8; $i++)
                 <div class="tech">
                     <div class="image">
-                        <img src="{{ asset('images/logopphp.png') }}" alt="PHP Logo">
+                        <img src="{{ asset('images/logopphp-removebg-preview.png') }}" alt="PHP Logo">
                     </div>
                     <div class="lang">
                         PHP
@@ -73,7 +73,7 @@
                     </div>
                     <div class="tech-logos">
                         @for ($j = 0; $j < 6; $j++)
-                            <img src="{{ asset('images/logopphp.png') }}" alt="PHP" class="tech-logo">
+                            <img src="{{ asset('images/logopphp-removebg-preview.png') }}" alt="PHP" class="tech-logo">
                         @endfor
                     </div>
                 </div>
