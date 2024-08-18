@@ -1,13 +1,14 @@
-.banner{
+/* BANNER */
+.banner {
     position: relative;
     height: 80vh;
-    background-color: #17181D;
+    background-color: #17181d;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.banner .content{
+.banner .content {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,38 +16,38 @@
     gap: 20px;
 }
 
-.banner .content .present-myself{
+.banner .content .present-myself {
     font-family: "JetBrains Mono", monospace;
     font-size: 48px;
     color: #fff;
 }
 
-.banner .content .present-myself strong{
+.banner .content .present-myself strong {
     color: #215cba;
 }
 
-.banner .content .developer-class{
+.banner .content .developer-class {
     font-family: "JetBrains Mono", monospace;
     font-size: 28px;
     font-style: oblique;
     color: #fff;
 }
 
-.banner .content .about-me{
+.banner .content .about-me {
     font-family: "Poppins", sans-serif;
     color: #fff;
     font-size: 14px;
     max-width: 50%;
 }
 
-.banner .content .actions{
+.banner .content .actions {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
 }
 
-.banner .content .actions .btn-action{
+.banner .content .actions .btn-action {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -57,11 +58,121 @@
     gap: 10px;
     text-decoration: none;
     color: #fff;
-    transition: .3s all ease;
+    transition: 0.3s all ease;
 }
 
-.banner .content .actions .btn-action:hover{
+.banner .content .actions .btn-action:hover {
     border: 1px solid #215cba;
     background-color: #215cba;
-    transition: .3s all ease;
+    transition: 0.3s all ease;
 }
+/* BANNER */
+
+/* TECHNOLOGIES */
+.technologies-section {
+    padding: 40px;
+    text-align: center;
+    background-color: #17181d;
+}
+
+.section-title {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.technologies {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.tech {
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.tech:hover {
+    transform: translateY(-10px);
+}
+
+.tech .image img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.tech .lang {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 18px;
+    color: #333;
+}
+/* TECHNOLOGIES */
+
+/* PROJECTS */
+.projects-section {
+    padding: 40px;
+    text-align: center;
+    background-color: #17181d;
+}
+
+.title {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.project {
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+}
+
+.project .image img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.project .project-name {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.project .tech-logos {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.project .tech-logo {
+    width: 40px;
+    height: auto;
+}
+/* PROJECTS */
