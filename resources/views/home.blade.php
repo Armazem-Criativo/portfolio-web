@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-    <div class="banner">
+    <div id="banner" class="banner">
         <div class="content">
             <div class="image">
                 <img src="{{asset('images/pixelart.png')}}" alt="">
@@ -41,7 +41,7 @@
             </div>
         </div>
     </div>
-    <div class="technologies-section">
+    <div id="tecnologias" class="technologies-section">
         <h2 class="section-title">Tecnologias e Habilidades</h2>
         <div class="technologies">
             @for ($i = 0; $i < 6; $i++)
@@ -56,7 +56,7 @@
             @endfor
         </div>
     </div>
-    <div class="projects-section">
+    <div id="projetos" class="projects-section">
         <h2 class="title">Projetos</h2>
         <div class="projects">
             @for ($i = 0; $i < 6; $i++)
@@ -80,7 +80,7 @@
             @endfor
         </div>
     </div>
-    <div class="contact-section">
+    <div id="contato" class="contact-section">
         <h1 class="contact-title">
             Quer entrar em <strong>contato</strong> ?
         </h1>
