@@ -1,0 +1,36 @@
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .nav {
+    display: flex;
+    height: 100%;
+}
+
+.header .nav .logo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-right: 50px;
+}
+
+.header .nav .links {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+    list-style: none;
+}
+
+.header .nav .links .link{
+    text-decoration: none;
+}
