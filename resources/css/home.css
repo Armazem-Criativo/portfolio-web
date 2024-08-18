@@ -1,0 +1,67 @@
+.banner{
+    position: relative;
+    height: 80vh;
+    background-color: #17181D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.banner .content .present-myself{
+    font-family: "JetBrains Mono", monospace;
+    font-size: 48px;
+    color: #fff;
+}
+
+.banner .content .present-myself strong{
+    color: #215cba;
+}
+
+.banner .content .developer-class{
+    font-family: "JetBrains Mono", monospace;
+    font-size: 28px;
+    font-style: oblique;
+    color: #fff;
+}
+
+.banner .content .about-me{
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    font-size: 14px;
+    max-width: 50%;
+}
+
+.banner .content .actions{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.banner .content .actions .btn-action{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #fff;
+    font-family: "JetBrains Mono", monospace;
+    border-radius: 15px;
+    padding: 8px 15px;
+    gap: 10px;
+    text-decoration: none;
+    color: #fff;
+    transition: .3s all ease;
+}
+
+.banner .content .actions .btn-action:hover{
+    border: 1px solid #215cba;
+    background-color: #215cba;
+    transition: .3s all ease;
+}
