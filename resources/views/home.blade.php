@@ -7,6 +7,9 @@
 @section('content')
     <div class="banner">
         <div class="content">
+            <div class="image">
+                <img src="{{asset('images/pixelart.png')}}" alt="">
+            </div>
             <h1 class="present-myself">
                 Olá, Eu sou <strong>Gustavo Raulino da Silva</strong>
             </h1>

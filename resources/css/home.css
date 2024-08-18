@@ -1,7 +1,7 @@
 /* BANNER */
 .banner {
     position: relative;
-    height: 80vh;
+    height: 100vh;
     background-color: #17181d;
     display: flex;
     align-items: center;
@@ -14,6 +14,27 @@
     justify-content: center;
     flex-direction: column;
     gap: 20px;
+}
+
+.banner .content .image{
+    border: 17px outset #1e6beb;
+    border-radius: 15px;
+    animation: upanddown 2s ease-in-out infinite;
+}
+
+.banner .content .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+@keyframes upanddown{
+    0%, 100% {
+        transform: translateY(0); /* Posição inicial */
+    }
+    50% {
+        transform: translateY(-20px); /* Posição quando o avatar sobe */
+    }
 }
 
 .banner .content .present-myself {
