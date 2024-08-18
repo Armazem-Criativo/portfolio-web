@@ -64,6 +64,10 @@
                     <div class="project-name">
                         Portfolio Web
                     </div>
+                    <div class="project-links">
+                        <a href="https://github.com/usuario/projeto" class="btn btn-github" target="_blank">GitHub</a>
+                        <a href="https://site.com/projeto" class="btn btn-site" target="_blank">Website</a>
+                    </div>
                     <div class="tech-logos">
                         @for ($j = 0; $j < 6; $j++)
                             <img src="{{ asset('images/logopphp.png') }}" alt="PHP" class="tech-logo">

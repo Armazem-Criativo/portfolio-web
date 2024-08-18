@@ -152,7 +152,7 @@
 }
 
 .project .image img {
-    width: 100px;
+    width: 150px; /* Aumenta o tamanho da imagem */
     height: auto;
     margin-bottom: 10px;
 }
@@ -162,6 +162,38 @@
     font-size: 18px;
     color: #333;
     margin-bottom: 10px;
+}
+
+.project .project-links {
+    margin-bottom: 10px;
+}
+
+.project .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 14px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.project .btn-github {
+    background-color: #333;
+}
+
+.project .btn-github:hover {
+    background-color: #555;
+}
+
+.project .btn-site {
+    background-color: #007bff;
+}
+
+.project .btn-site:hover {
+    background-color: #0056b3;
 }
 
 .project .tech-logos {
@@ -174,5 +206,17 @@
 .project .tech-logo {
     width: 40px;
     height: auto;
+}
+
+@media (max-width: 768px) {
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .projects {
+        grid-template-columns: 1fr;
+    }
 }
 /* PROJECTS */
