@@ -8,6 +8,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: .3s all ease;
+}
+
+.header.active{
+    background-color: #007bff;
+    transition: .3s all ease;
 }
 
 .header .nav {
