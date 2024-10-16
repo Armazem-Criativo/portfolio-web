@@ -1,7 +1,6 @@
 import "./bootstrap";
 
 function init() {
-    // changeColorHeader();
     particle();
 }
 
