@@ -1,11 +1,23 @@
 /* BANNER */
+#particles-js
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: #17181d;
+}
+
 .banner {
     position: relative;
     height: 100vh;
-    background-color: #17181d;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    color: #fff;
 
     .content {
         display: flex;
@@ -13,19 +25,6 @@
         justify-content: center;
         flex-direction: column;
         gap: 20px;
-
-        .image {
-            border: 17px outset #1e6beb;
-            border-radius: 15px;
-            width: 15%;
-            animation: upanddown 2s ease-in-out infinite;
-
-            img {
-                height: 100%;
-                width: 100%;
-                object-fit: cover;
-            }
-        }
 
         .present-myself {
             font-family: "JetBrains Mono", monospace;
@@ -74,6 +73,45 @@
                     border: 1px solid #215cba;
                     background-color: #215cba;
                     transition: 0.3s all ease;
+                }
+            }
+        }
+
+        .arrow-tech{
+            display: flex;
+            animation: upanddown 2s ease-in-out infinite;
+            margin-top: 30px;
+            position: absolute;
+            z-index: 2;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 5vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+
+            .arrow{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 2px solid #fff;
+                border-radius: 50%;
+                width: 50px;
+                height: 50px;
+                transition: background-color 0.3s ease;
+
+                &:hover{
+                    background-color: rgba(33, 92, 186, 0.3);
+                }
+
+                svg{
+                    height: 30px;
+                    width: 30px;
+
+                    path{
+                        color: #fff;
+                    }
                 }
             }
         }
