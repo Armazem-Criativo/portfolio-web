@@ -40,6 +40,7 @@
             font-size: 28px;
             font-style: oblique;
             color: #fff;
+            animation: color-change 4s infinite;
         }
 
         .about-me {
@@ -124,6 +125,28 @@
     }
     50% {
         transform: translateY(-20px);
+    }
+}
+
+@keyframes color-change{
+    0%{
+        color: #ff5e5e;
+    }
+
+    25%{
+        color: #ffcc5e;
+    }
+
+    50%{
+        color: #5eff5e;
+    }
+
+    75%{
+        color: #5e99ff;
+    }
+
+    100%{
+        color: #00e0ff;
     }
 }
 /* BANNER */
