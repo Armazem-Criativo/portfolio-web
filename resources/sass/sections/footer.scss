@@ -31,7 +31,6 @@
         .social-media {
             display: flex;
             justify-content: flex-end;
-            opacity: 0.26;
             gap: 10px;
 
             a {
@@ -62,6 +61,17 @@
                 opacity: 0.2;
                 background: #fff;
             }
+        }
+
+        .marquee {
+            color: #fff;
+            font-family: "JetBrains Mono", monospace;
+            font-size: 16px;
+            padding: 10px 0;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            text-transform: uppercase;
+            animation: color-change 4s infinite;
         }
     }
 }

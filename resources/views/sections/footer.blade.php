@@ -20,4 +20,11 @@
             </a>
         </div>
     </div>
+    <div class="row">
+        <marquee behavior="scroll" direction="left" class="marquee">
+            @for ($i=0;$i<=10;$i++)
+                PHP
+            @endfor
+        </marquee>
+    </div>
 </footer>

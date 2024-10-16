@@ -75,6 +75,9 @@
                     <div class="project-name">
                         Portfolio Web
                     </div>
+                    <div class="project-description">
+                        <p>Este é um projeto de portfólio web, onde desenvolvi uma página para apresentar meus trabalhos e habilidades usando tecnologias modernas.</p>
+                    </div>
                     <div class="project-links">
                         <a href="https://github.com/usuario/projeto" class="btn btn-github" target="_blank">GitHub</a>
                         <a href="https://site.com/projeto" class="btn btn-site" target="_blank">Website</a>
