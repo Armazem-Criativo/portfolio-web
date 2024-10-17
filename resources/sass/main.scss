@@ -1,6 +1,6 @@
-//Import pages
-@import 'pages/home.scss';
+// Import pages
+@use 'pages/home';
 
-//Import sections
-@import 'sections/header.scss';
-@import 'sections/footer.scss';
+// Import sections
+@use 'sections/header';
+@use 'sections/footer';
