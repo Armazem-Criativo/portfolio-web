@@ -2,6 +2,7 @@
 
 namespace App\Providers\Filament;
 
+use App\Filament\Pages\HomeTexts;
 use App\Filament\Resources\UserResource;
 use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\DisableBladeIconComponents;
@@ -38,6 +39,7 @@ class AdminPanelProvider extends PanelProvider
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')
             ->pages([
                 Pages\Dashboard::class,
+                HomeTexts::class,
             ])
             ->navigation(function (NavigationBuilder $builder): NavigationBuilder {
                 return $builder
@@ -47,6 +49,11 @@ class AdminPanelProvider extends PanelProvider
                                 ->icon('heroicon-o-home')
                                 ->isActiveWhen(fn (): bool => request()->routeIs('filament.admin.pages.dashboard'))
                                 ->url(fn (): string => Dashboard::getUrl()),
+                        ])
+                    )
+                    ->group(
+                        NavigationGroup::make('Home')->items([
+                            ...HomeTexts::getNavigationItems()
                         ])
                     )
                     ->group(
