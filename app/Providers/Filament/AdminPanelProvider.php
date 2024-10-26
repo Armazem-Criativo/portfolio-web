@@ -3,6 +3,7 @@
 namespace App\Providers\Filament;
 
 use App\Filament\Pages\HomeTexts;
+use App\Filament\Resources\TechnologiesResource;
 use App\Filament\Resources\UserResource;
 use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\DisableBladeIconComponents;
@@ -54,7 +55,8 @@ class AdminPanelProvider extends PanelProvider
                     )
                     ->group(
                         NavigationGroup::make('Home')->items([
-                            ...HomeTexts::getNavigationItems()
+                            ...HomeTexts::getNavigationItems(),
+                            ...TechnologiesResource::getNavigationItems(),
                         ])
                     )
                     ->group(
